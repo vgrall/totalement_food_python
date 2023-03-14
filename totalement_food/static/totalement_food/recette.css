@@ -1,0 +1,141 @@
+body {
+    font-family: 'Righteous', cursive;
+    font-size: 1em;
+    background-color: #221e1f;
+    color: #FBE4CC;
+}
+
+
+#photoGalette {
+ width: 100%;
+ opacity: 0;
+ transform: translateX(-200px);
+ transition: 1s ease-in;
+}
+
+h1 {
+    color: #FBE4CC;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    margin-top: 20px;
+
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.nutrition {
+    border-collapse: collapse;
+    /* Permet d'obtenir un séparateur sans coupure entre les deux colonnes */
+    line-height: 15px;
+
+}
+
+
+td,
+th {
+    padding: 10px;
+}
+
+ul {
+    line-height: 1.2;
+}
+
+li {
+    margin-bottom: 30px;
+
+}
+
+.titre-recette {
+    background: #FBE4CC;
+    text-align: center;
+    color: #221e1f;
+
+}
+
+.titre-etiquette {
+    font-weight: 800;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FBE4CC;
+
+}
+
+
+.separateur {
+
+    border-bottom: 10px solid #FBE4CC;
+    width: 30%;
+
+}
+
+.titre-total,
+.titre-valeur,
+.serving,
+.macronutrition,
+.valeur-macro {
+    /*Mise en forme des 3 div pour élargir l'espace entre elles*/
+    text-align: justify;
+    padding-left: 8%;
+    padding-bottom: 0px;
+
+}
+
+
+.container_etiquette {
+
+    display: flex;
+
+}
+
+
+.ingredients,
+.macros,
+.procedure {
+    padding: 0 2% 0;
+}
+
+/* FAIRE EN SORTE QUE LA PROCEDURE SE POSITIONNE ALIGNEE SUR LA DIV INGREDIENTS */
+
+.container-page {
+    /*Encadre la div ingredients, macros et procedure*/
+    display: flex;
+    flex: wrap;
+    align-items: baseline;
+    /* Aligner les éléments verticalement */
+    justify-content: center;
+    /* aligner les éléments horizontalement en les centrant sur la page */
+    height: 100%;
+    /* Définir la hauteur du conteneur */
+
+
+}
+
+figure:hover {
+    transform: scale(1.05);
+}
+
+
+.footer_copyright {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+
+
+/* règles pour les ecrans plus petits -comportement en dessous de 720px */
+
+@media only screen and (max-width: 720px) {
+
+    body,
+    header,
+    .footer_copyright,
+    .container-page {
+
+        max-width: 100%;
+
+    }
+}

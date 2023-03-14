@@ -4,14 +4,172 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'totalement_food/style.css' %}">
+    <link rel="stylesheet" href="{% static 'totalement_food/recette.css' %}">
+    <script language="Javascript" type="text/javascript" src="{% static 'totalement_food/recette.js' %}"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LA RECETTE</title>
+    <title>Totalement Food</title>
+    <!-- indique qu'il faut prendre en compte la largeur de l'écran-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Londrina+Solid:wght@300&family=Righteous&display=swap"
+        rel="stylesheet">
+    <title>Fiche Recette</title>
 </head>
 
 <body>
-    <h1>LA RECETTE CHOISIE DANS LA BDD</h1>
+
+
+    <header>
+        <nav>
+            <figure>
+                <a href="/totalement_food"><img src={% static 'totalement_food/images/logo.png' %}
+                        alt="logo Totalement Food"></a>
+            </figure>
+
+
+
+        </nav>
+
+        <main>
+
+            <div class="banniere" id="banniere">
+                <img src={% static 'totalement_food/images/galette.jpeg' %} alt="banniere TF" id="photoGalette">
+            </div>
+
+            <h1 id="ancre-recette">LES GALETTES BRETONNES</h1><br><br>
+
+            <div class="container-page">
+
+                <div class="container_etiquette">
+
+                    <div class="ingredients">
+
+                        <table class="aliments">
+                            <tr>
+                                <th>
+                                    <h3>Ingrédients</h3>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>300 g de farine de sarrasin</td>
+                            <tr>
+                                <td>600 g d'eau</td>
+                            </tr>
+                            <tr>
+                                <td>9 g de sel</td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                    <div class="macros">
+
+                        <table class="nutrition">
+                            <tr>
+                                <th colspan="2">
+                                    <h3>Nutrition</h3>
+                                </th>
+                            </tr>
+                            <tr class="titre-recette">
+                                <td colspan="2">
+                                    <h4>GALETTES DE SARRASIN</h4>
+                                </td>
+                            </tr>
+
+                            <tr class="titre-etiquette">
+
+                                <td colspan="2">
+                                    <h4>VALEURS NUTRITIONELLES</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="serving">Une part</td>
+                                <td class="serving">2 galettes</td>
+                            </tr>
+                            <tr>
+
+                                <td class="separateur">
+
+                                </td>
+
+                                <td class="separateur"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="titre-total">Total</td>
+                                <td class="titre-valeur">Valeur</td>
+                            </tr>
+
+                            <tr>
+                                <td class="macronutrition">Lipides</td>
+                                <td class="valeur-macro">1,3 g</td>
+                            </tr>
+
+                            <tr></tr>
+                            <tr>
+                                <td class="macronutrition">Glucides</td>
+                                <td class="valeur-macro">41 g</td>
+                            </tr>
+                            <tr>
+                                <td class="macronutrition">Protéines</td>
+                                <td class="valeur-macro">6.9 g</td>
+                            </tr>
+
+
+
+                        </table>
+                    </div>
+                </div>
+                <br><br>
+
+                <div class="procedure">
+
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Mélanger tous les éléments ensemble</li>
+                            </ul>
+                            <ul>
+                                <li>Mixer pour ne pas avoir de grumeaux</li>
+                            </ul>
+                            <ul>
+                                <li>Laisser reposer le temps de faire chauffer la bilic ou la poêle à 220-230°C</li>
+                            </ul>
+                            <ul>
+                                <li>Etaler votre galette le plus finement possible</li>
+                            </ul>
+                            <ul>
+                                <li>Laisser cuire 1 à 2 min puis retourner et laisser cuire quelques secondes</li>
+                            </ul>
+                            <ul>
+                                <li>Réserver à plat le temps qu'elle refroidisse</li>
+                            </ul>
+                            <ul>
+                                <li>Ou badigeonner la galette de beurre fondu puis</li>
+                            </ul>
+                            <ul>
+                                <li>Garnir de suite avec ce que vous aimez (oeuf, jambon, fromage)</li>
+                            </ul>
+
+                        </td>
+                    </tr>
+
+                </div>
+            </div>
+
+
+        </main>
+
+
 </body>
+
+
+<footer class="footer_copyright">
+    <small class="copyright_content">© 2023, Totalement Food - Site web par Virginie Grall</small>
+</footer>
+
+
 
 </html>
