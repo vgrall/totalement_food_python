@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background-color: #1f2039;
+    Ã’
+  }
+  
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 70px;
+    font-family: 'Righteous', cursive;
+    font-size: 1em;
+    background-color: #221e1f;
+    color: #FBE4CC;
+}
+
+.col-12 {
+ font-size: xx-large;
+}
+
+
+.banniere {
+    position: absolute; 
+    height: 100vh; /* la hauteur de l'Ã©cran */
+    z-index: -1; 
+    inset: 0px; 
+    /* overflow: hidden;  */
+    background-size: cover; 
+    background-color: transparent; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+  }
+
+   /* titre et sous-titre au milieu de la banniere photo */
+   .content {
+    top: 50%; /* positionnement vertical au centre */
+    left: 50%; /* positionnement horizontal au centre */
+    text-align: center;
+    color: #FBE4CC;
+    font-family: 'Righteous', cursive;
+  }
+  

@@ -10,3 +10,9 @@ class Recette(models.Model):
 
     def __str__(self):
         return self.titre
+
+
+class Categorie(models.Model):
+    entree = models.CharField(max_length=200)
+    plat = models.CharField(max_length=200)
+    dessert = models.CharField(max_length=200)

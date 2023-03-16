@@ -9,6 +9,8 @@
     background-color: #1f2039;
     Ã’
   }
+
+
   
   .banniere {
     position: absolute; 
@@ -22,7 +24,22 @@
     background-position: center; 
   }
   
-  /* titre et sous-titre au milieu de la banniere photo */
+/* mettre l'onglet à droite dans le header avec une police blanche */
+  .onglet {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0;
+    list-style: none;
+    color: #FBE4CC;
+    font-family: 'Righteous', cursive;
+  }
+  a {
+    color: #FBE4CC ;
+  }
+
   .content {
     top: 50%; /* positionnement vertical au centre */
     left: 50%; /* positionnement horizontal au centre */
@@ -30,7 +47,8 @@
     color: #FBE4CC;
     font-family: 'Righteous', cursive;
   }
-  
+
+ 
   /* section recetts avec photo en colonne */
   .chapter img{
     width: 425px;
