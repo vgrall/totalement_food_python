@@ -6,7 +6,7 @@ body {
 }
 
 
-#photoGalette {
+#photoRecette {
  width: 100%;
  opacity: 0;
  transform: translateX(-200px);
@@ -139,3 +139,4 @@ figure:hover {
 
     }
 }
+

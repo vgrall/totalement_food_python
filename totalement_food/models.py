@@ -1,3 +1,12 @@
 from django.db import models
 
-# Create your models here.
+
+class Recette(models.Model):
+    titre = models.CharField(max_length=200)
+    ingredients = models.CharField(max_length=500)
+    valeur_nutri = models.CharField(max_length=500)
+    process = models.TextField()
+    photo = models.CharField(max_length=1000)
+
+    def __str__(self):
+        return self.titre

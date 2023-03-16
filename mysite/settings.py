@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'totalement_food.apps.TotalementFoodConfig'
+    'totalement_food.apps.TotalementFoodConfig',
 ]
 
 MIDDLEWARE = [

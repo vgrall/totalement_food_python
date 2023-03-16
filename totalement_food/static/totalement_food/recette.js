@@ -4,8 +4,8 @@ window.addEventListener("scroll", () => {
 
   //photo galette
   if (scrollValue > 0.1) {
-    photoGalette.style.opacity = 1;
-    photoGalette.style.transform = "none";
+    photoRecette.style.opacity = 1;
+    photoRecette.style.transform = "none";
   }
 });
 Footer;

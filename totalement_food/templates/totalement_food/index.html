@@ -37,31 +37,27 @@
     </header>
 
     <main>
+
+
+
+
+
         <section class="chapters">
 
             <div>
                 <div class="chapter">
 
+                    {% for recette in listerecettes %}
                     <figure>
-                        <a href="recette">
-                            <img src={% static 'totalement_food/images/galette.png' %} alt="galettes bretonnes">
-                            <figcaption class="chapter-titre">Les Galettes Bretonnes</figcaption>
+                        <a href="recettes/{{recette.id}}">
+
+                            <img src="{{recette.photo}}" alt="photo-recette">
+
+                            <figcaption class="chapter-titre">{{recette.titre}} </figcaption>
+
                         </a>
                     </figure>
-                    <figure>
-                        <a href="https://www.canva.com/design/DAFYZ9hs-gs/bZcLugaTgptqgf0IlOV9yw/view?utm_content=DAFYZ9hs-gs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-                            target="_blank">
-                            <img src={% static 'totalement_food/images/crepe.jpg' %} alt="crêpes bretonnes">
-                            <figcaption class="chapter-titre">Les Crêpes Bretonnes</figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="https://www.canva.com/design/DAFMpTmtsoA/GIDjRLkKy9kIiUD5gtiOiA/view?utm_content=DAFMpTmtsoA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-                            target="_blank">
-                            <img src={% static 'totalement_food/images/galette.png' %} alt="yaourt au lait d'amandes">
-                            <figcaption class="chapter-titre">Yaourt au lait d'amandes</figcaption>
-                        </a>
-                    </figure>
+                    {% endfor %}
 
                 </div>
 
