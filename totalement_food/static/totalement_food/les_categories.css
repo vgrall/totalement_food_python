@@ -10,6 +10,11 @@
     Ã’
   }
   
+  a {
+    color: #FBE4CC ;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+  }
 
 .container {
     width: 100%;
