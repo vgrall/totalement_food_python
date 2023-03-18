@@ -11,12 +11,18 @@ class Recette(models.Model):
     def __str__(self):
         return self.titre
 
-# create a lexique class with titre, definition
 
-
-class Lexique(models.Model):
+class Categorie(models.Model):
     titre = models.CharField(max_length=200)
-    definition = models.TextField()
+    definition = models.TextField(null=True)
 
     def __str__(self):
         return self.titre
+
+
+# class Lexique(models.Model):
+#     titre = models.CharField(max_length=200)
+#     definition = models.TextField(null=True)
+
+#     def __str__(self):
+#         return self.titre

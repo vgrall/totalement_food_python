@@ -1,7 +1,8 @@
 from django.shortcuts import render  # render permet d'aller chercher un template
 from django.http import HttpResponse
 from .models import Recette
-from .models import Lexique
+
+from .models import Categorie
 
 
 def index(request):
@@ -16,13 +17,13 @@ def get_recette(request, recette_id):
     return render(request, 'totalement_food/recette.html', {'recette': recette})
 
 
-# créer une vue pour totalement_food/les_categories.html
-
-def les_categories(request):
-
-    return render(request, 'totalement_food/les_categories.html')
+def liste_categories(request):
+    categories_liste = Categorie.objects.all()
+    return render(request, 'totalement_food/liste_categorie.html', {'categories_liste': categories_liste})
 
 
-def lexique(request):
+def vue_categorie(request, categorie_id):
+    categorie = Categorie.objects.get(id=categorie_id)
+    print('hello')
 
-    return render(request, 'totalement_food/lexique.html')
+    return render(request, 'totalement_food/vue_categorie.html', {'categorie': categorie})
