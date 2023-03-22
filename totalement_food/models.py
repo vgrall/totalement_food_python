@@ -20,9 +20,21 @@ class Categorie(models.Model):
         return self.titre
 
 
-# class Lexique(models.Model):
-#     titre = models.CharField(max_length=200)
-#     definition = models.TextField(null=True)
+class Ingredients(models.Model):
+    nom = models.CharField(max_length=200)
+    energie = models.CharField(max_length=10)
+    proteine = models.CharField(max_length=10)
+    lipide = models.CharField(max_length=10)
+    glucide = models.CharField(max_length=10)
+
+    def __str__(self):
+        return self.nom
+
+
+# class Configuration(models.Model):
+
+#     nom = models.CharField(max_length=200)
+#     classe = models.CharField(max_length=200)
 
 #     def __str__(self):
-#         return self.titre
+#         return self.nom

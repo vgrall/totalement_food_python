@@ -31,7 +31,7 @@
         </div>
 
         <div class="content">
-            <h1 class="title">Les Catégories de Recettes</h1>
+            <h1 class="title">CONFIGURATION</h1>
         </div>
     </header>
 
@@ -39,13 +39,38 @@
 
         <div class="col-12">
 
-            {% for categorie in categories_liste %}
+            <table>
+                <tr>
+                    <th>
+                        <h2>Catégories</h2>
+                    </th>
+                    <th>
+                        <h2>Ingrédients</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
 
-            <a href="categories/{{categorie.id}}">
+                        {% for categorie in categorie_liste %}
 
-                <p>{{categorie.titre}}</p>
+                        <a href="categories/{{categorie.id}}">
 
-                {% endfor %}
+                            <h2>{{ categorie.titre }}</h2>
+                        </a>
+
+                        {% endfor %}
+                    </td>
+                    <td>
+                        {% for ingredient in ingredients_liste %}
+                        <a href="ingredients/{{ingredient.id}}">
+                            <h2>{{ ingredient.nom }}</h2>
+                        </a>
+
+                        {% endfor %}
+                    </td>
+                </tr>
+            </table>
+
 
         </div>
 

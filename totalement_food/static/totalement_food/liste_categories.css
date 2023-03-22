@@ -10,7 +10,7 @@
     Ã’
   }
   
-  a {
+  a, th, tr{
     color: #FBE4CC ;
     font-family: 'Manrope', sans-serif;
     font-size: 1em;
@@ -18,6 +18,20 @@
     
 
   }
+
+  td{
+    padding: 30px;
+  
+  
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+
+  }
+  
+
 
 .container {
     width: 100%;
@@ -36,6 +50,7 @@
 .col-12 {
  font-size: xx-large;
 }
+
 
 
 .banniere {

@@ -31,7 +31,7 @@
         </div>
 
         <div class="content">
-            <h1 class="title">Les Catégories de Recettes</h1>
+            <h1 class="title">La composition de l'ingrédient</h1>
         </div>
     </header>
 
@@ -39,24 +39,15 @@
 
         <div class="col-12">
 
-            {% for categorie in categories_liste %}
-
-            <a href="categories/{{categorie.id}}">
-
-                <p>{{categorie.titre}}</p>
-
-                {% endfor %}
+            <h2>{{ingredient.nom}} :</h2> <br>
+            <li>{{ingredient.energie}}</li>
+            <li>{{ingredient.proteine}}</li>
+            <li>{{ingredient.lipide}}</li>
+            <li>{{ingredient.glucide}}</li>
 
         </div>
-
-
-
-
-    </div>
 
     </div>
 
 
 </body>
-
-</html>

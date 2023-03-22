@@ -13,5 +13,13 @@ urlpatterns = [
     path('categories/<int:categorie_id>',
          views.vue_categorie, name="vue_categorie"),
 
+    path('ingredients', views.liste_ingredients, name='liste_ingredients'),
+
+    path('ingredients/<int:ingredient_id>',
+         views.vue_ingredient, name='vue_ingredient'),
+
+    path('configuration', views.configuration,
+         name="liste_configuration"),
+
 
 ]
